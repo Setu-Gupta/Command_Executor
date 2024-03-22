@@ -9,7 +9,7 @@ This library provides two APIs to execute commands on the shell from C++.
   1. `aync_proc<N>(std::string&& cmd)`:
      Constructor for the `async_proc`. `N` is the buffer size (number of characters) for temporarily holding the output. `cmd` is the command to be executed.
   
-  2. `std::string async_proc::get`:
+  2. `std::string async_proc::get()`:
      Wait for `cmd` to finish executing and return the output as a string.
        
   3. `std::string exec(std::string&& cmd)`:
